@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>online educational platform</title>
+<style>
+  /* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light Gray */
+    color: #333; /* Dark Gray */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #343a40; /* Dark Gray */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.sticky-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sticky-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #ffffff; /* White */
+}
+
+.sticky-header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sticky-header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.sticky-header nav ul li a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.sticky-header nav ul li a:hover {
+    color: #f8f9fa; 
+}
+
+/* Main sections */
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.home-section{
+    background-color: #ff0077; 
+    color: #ffffff; 
+}
+
+.about-section {
+    background-color: #a72876; 
+    color: #ffffff; /* White */
+}
+
+.courses-section {
+    background-color: #35dc75; 
+    color: #ffffff; /* White */
+}
+
+.contact-section {
+    background-color: #0b07ff;
+    color: #333; /* Dark Gray */
+}
+
+.section h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.course {
+    margin-bottom: 40px;
+}
+
+.course h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.course p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40; /* Dark Gray */
+    color: #ffffff; /* White */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+</style>
+</head>
+<body>
+
+<header class="sticky-header">
+    <div class="container">
+        <h1>online learning platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="section home-section">
+        <div class="container">
+            <h2>Welcome to online educational platform</h2>
+            <p>Empowering individuals with practical skills and core values for personal and professional success.</p>
+        </div>
+    </section>
+    
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are committed to providing education that focuses on developing practical skills and instilling core values such as integrity, responsibility, and teamwork.</p>
+        </div>
+    </section>
+    
+    <section id="courses" class="section courses-section">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="course">
+                <img src=""
+                <h3>Course Name 1</h3>
+                <p><b>FULLSTACK DEVELOPMENT</b></p>
+            </div>
+            <div class="course">
+                <h3>Course Name 2</h3>
+                <p><B>PHYTHON</B></p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to learn more? Reach out to us!</p>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <textarea id="message" name="message" placeholder="Write your message here..." rows="4"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Skill and Value-based Education. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

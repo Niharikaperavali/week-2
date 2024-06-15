@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Reset Example</title>
+    <style>
+        /* Universal selector to reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #af874c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            margin: 20px 0;
+        }
+
+        p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00106b;
+        }
+
+        footer {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        footer .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        footer .footer-content p,
+        footer .footer-content a {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #00aff0;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <main>
+        <p><em>hello everone welcome to my web page</em>.</p>
+        <button>Click Me</button>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:niharika@gmail.com">my@website.com</a></p>
+            <p>Follow us on:
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modal Overlay Example</title>
+<style>
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Background color for the main content */
+  }
+
+  .main-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* Background color for the main content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  /* Modal overlay */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1000; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+
+  .modal h2 {
+    margin-top: 0;
+  }
+
+  .modal p {
+    margin-bottom: 20px;
+  }
+
+  /* Close button */
+  .close-modal-btn {
+    padding: 10px 20px;
+    background-color: #ff00d4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .close-modal-btn:hover {
+    background-color: #b30086;
+  }
+
+  
+  .open-modal-btn {
+    padding: 10px 20px;
+    background-color: #ff00dd;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .open-modal-btn:hover {
+    background-color: #0056b3;
+  }
+
+  #modal-checkbox:checked + .modal-overlay {
+    display: flex;
+  }
+
+  
+  #modal-checkbox {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="main-content">
+  <h1>Main Content</h1>
+  <p>This is the main content that will be partially obscured by the modal overlay.</p>
+  <label for="modal-checkbox" class="open-modal-btn">Open Modal</label>
+</div>
+<input type="checkbox" id="modal-checkbox">
+<div class="modal-overlay">
+  <div class="modal">
+    <h2>Modal Title</h2>
+    <p>Modal content goes here...</p>
+    <label for="modal-checkbox" class="close-modal-btn">Close Modal</label>
+  </div>
+</div>
+
+</body>
+</html>

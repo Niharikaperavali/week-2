@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colorful Horizontal Navigation Bar</title>
+<style>
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .navbar {
+    background-color: #8a154c ; 
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .navbar li {
+    display: inline;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: #fff; 
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar li a:hover {
+    background-color: #0fb300; 
+  }
+</style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</body>
+</html>
